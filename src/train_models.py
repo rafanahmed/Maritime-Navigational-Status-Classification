@@ -43,7 +43,7 @@ random_state: int = 42, class_weight: str = "balanced"):
         class_weight=class_weight
     )
 
-def build_xgboost(n_estimators: int = 300, learning_rate: float = 0.05, max_depth: int = 6,
+def build_xgboost(n_estimators: int = 300, learning_rate: float = 0.05, max_depth: int | None = None,
 subsample: float = 0.8, colsample_bytree: float = 0.8, random_state: int = 42, scale_pos_weight: int | None = None):
     """
     Builds and returns a XGBoost classifier for multiclass classification.
