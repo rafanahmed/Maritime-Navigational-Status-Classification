@@ -7,7 +7,7 @@ def build_logistic_regression_model():
         multi_class="multinomial", 
         solver="lbfgs", 
         max_iter=1000, 
-        n_jobs=-1
+        n_jobs=-1,
         class_weight="balanced"
     )
 
@@ -17,7 +17,7 @@ random_state: int = 42, class_weight: str = "balanced"):
         n_estimators=n_estimators, 
         max_depth=max_depth, 
         random_state=random_state,
-        n_jobs=-1
+        n_jobs=-1,
         class_weight=class_weight
     )
 
@@ -34,3 +34,5 @@ subsample: float = 0.8, colsample_bytree: float = 0.8, random_state: int = 42, s
         n_jobs=-1,
         tree_method="hist"
     )
+
+print("Compilation complete")
