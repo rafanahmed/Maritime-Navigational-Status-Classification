@@ -146,6 +146,33 @@ def clean_types_and_missing(df: pd.DataFrame) -> pd.DataFrame:
         df_clean = df_clean.dropna(subset=cols_to_check)
     return df_clean
 
+def drop_invalid_classes(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Removes invalid navigational status classes that represent data quality issues
+    rather than actual navigational states.
+    
+    Args:
+        df (pd.DataFrame): Input DataFrame with navigationalstatus column.
+    
+    Returns:
+        pd.DataFrame: DataFrame with invalid classes removed.
+    """
+    if TARGET_COLUMN not in df.columns:
+        return df
+    
+    df_filtered = df.copy()
+    initial_count = len(df_filtered)
+    
+    # Drop "Unknown value" 
+    invalid_classes = ["Unknown value"]
+    mask = ~df_filtered[TARGET_COLUMN].isin(invalid_classes)
+    df_filtered = df_filtered[mask].copy()
+    
+    dropped_count = initial_count - len(df_filtered)
+    if dropped_count > 0:
+        print(f"[drop_invalid_classes] Dropped {dropped_count} samples with invalid navigational status: {invalid_classes}")
+    
+    return df_filtered
 
 def get_features_and_target(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.Series]:
     """
@@ -320,16 +347,19 @@ def prepare_ais_data(path: str) -> Tuple[
         Tuple containing:
         (X_train, X_val, X_test, y_train, y_val, y_test, preprocessor)
     """
-    # 1. Load & 2. Drop IDs
+    # 1. Load & Drop unnecessary columns
     df = load_raw_ais(path)
     
-    # 3. Filter outliers
+    # 2. Filter outliers
     df = filter_physical_outliers(df)
     
-    # 4. Clean types & missing
+    # 3. Clean types & missing
     df = clean_types_and_missing(df)
     
-    # 5. Features & Target
+    # 4. Drop invalid classes
+    df = drop_invalid_classes(df)
+    
+    # 5. Get features & target
     X, y = get_features_and_target(df)
     
     # 6. Drop rare classes
