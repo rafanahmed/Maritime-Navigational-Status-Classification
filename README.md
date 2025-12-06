@@ -196,7 +196,7 @@ Three models are evaluated:
 
 1. **Logistic Regression**: Linear baseline with balanced class weights
 2. **Random Forest**: 300 trees, balanced class weights, no max depth limit
-3. **XGBoost**: 300 trees, learning rate 0.05, max depth 6, subsample 0.8
+3. **XGBoost**: 300 trees, learning rate 0.05, no max depth limit, subsample 0.8
 
 All models use class weighting to handle the severe class imbalance.
 
