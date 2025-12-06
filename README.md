@@ -37,9 +37,7 @@ Maritime-Navigational-Status-Classification/
 │       └── classification_report_*.txt (3 files)
 ├── report/                       # Final report
 │   └── Rendered Notebooks/       # Rendered notebook outputs
-│       ├── 01_eda_preprocessing.html
 │       ├── 01_eda_preprocessing.pdf
-│       ├── 02_modeling_evaluation.html
 │       └── 02_modeling_evaluation.pdf
 ├── requirements.txt              # Python dependencies
 └── README.md                     # This file
