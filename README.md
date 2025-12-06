@@ -1,6 +1,6 @@
 # Maritime Navigational Status Classification: Kattegat Strait AIS Data Analysis
 
-A machine learning project for classifying vessel navigational status from Automatic Identification System (AIS) data collected from ships transiting the*Kattegat Strait between January 1st and March 10th, 2022.
+A machine learning project for classifying vessel navigational status from Automatic Identification System (AIS) data collected from ships transiting the Kattegat Strait between January 1st and March 10th, 2022.
 
 ## Overview
 
