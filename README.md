@@ -35,7 +35,7 @@ Maritime-Navigational-Status-Classification/
 │       ├── test_metrics.csv
 │       ├── confusion_matrix_*.csv (3 files)
 │       └── classification_report_*.txt (3 files)
-├── report/                       # Final report (to be added)
+├── report/                       # Final report 
 ├── requirements.txt              # Python dependencies
 └── README.md                     # This file
 ```
