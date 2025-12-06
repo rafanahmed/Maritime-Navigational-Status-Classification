@@ -1,0 +1,19 @@
+Classification Report - XGBoost (Test Set)
+================================================================================
+
+                                                       precision    recall  f1-score   support
+
+                                            At anchor       0.71      0.45      0.55        98
+                           Constrained by her draught       0.83      0.87      0.85      2453
+                                   Engaged in fishing       0.97      0.99      0.98       982
+                                               Moored       0.81      0.58      0.68       675
+Power-driven vessel pushing ahead or towing alongside       0.85      0.94      0.89        47
+                    Power-driven vessel towing astern       0.83      0.98      0.90        49
+                  Reserved for future amendment [HSC]       0.98      1.00      0.99       350
+                           Restricted maneuverability       0.91      0.83      0.86       325
+                                    Under way sailing       0.98      0.64      0.77       264
+                               Under way using engine       0.99      0.99      0.99     59852
+
+                                             accuracy                           0.98     65095
+                                            macro avg       0.88      0.83      0.85     65095
+                                         weighted avg       0.98      0.98      0.98     65095

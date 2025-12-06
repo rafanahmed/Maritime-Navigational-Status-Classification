@@ -1,0 +1,19 @@
+Classification Report - Random_Forest (Test Set)
+================================================================================
+
+                                                       precision    recall  f1-score   support
+
+                                            At anchor       0.84      0.52      0.64        98
+                           Constrained by her draught       0.91      0.91      0.91      2453
+                                   Engaged in fishing       0.98      0.99      0.99       982
+                                               Moored       0.90      0.66      0.76       675
+Power-driven vessel pushing ahead or towing alongside       0.88      0.91      0.90        47
+                    Power-driven vessel towing astern       0.86      0.98      0.91        49
+                  Reserved for future amendment [HSC]       0.98      0.99      0.98       350
+                           Restricted maneuverability       0.93      0.86      0.89       325
+                                    Under way sailing       0.93      0.78      0.85       264
+                               Under way using engine       0.99      0.99      0.99     59852
+
+                                             accuracy                           0.99     65095
+                                            macro avg       0.92      0.86      0.88     65095
+                                         weighted avg       0.99      0.99      0.98     65095

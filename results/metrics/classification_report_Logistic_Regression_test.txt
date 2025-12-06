@@ -1,0 +1,19 @@
+Classification Report - Logistic_Regression (Test Set)
+================================================================================
+
+                                                       precision    recall  f1-score   support
+
+                                            At anchor       0.03      0.67      0.06        98
+                           Constrained by her draught       0.42      0.97      0.59      2453
+                                   Engaged in fishing       0.48      0.90      0.62       982
+                                               Moored       0.07      0.44      0.12       675
+Power-driven vessel pushing ahead or towing alongside       0.06      0.70      0.11        47
+                    Power-driven vessel towing astern       0.29      1.00      0.45        49
+                  Reserved for future amendment [HSC]       0.52      0.96      0.68       350
+                           Restricted maneuverability       0.10      0.84      0.18       325
+                                    Under way sailing       0.03      0.52      0.06       264
+                               Under way using engine       0.99      0.71      0.83     59852
+
+                                             accuracy                           0.72     65095
+                                            macro avg       0.30      0.77      0.37     65095
+                                         weighted avg       0.94      0.72      0.80     65095
