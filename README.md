@@ -267,6 +267,6 @@ See `requirements.txt` for complete list. Key packages:
 
 ## Acknowledgments
 
-- **AIS Data**: Ships transiting the Kattegat Strait between January 1st and March 10th, 2022
+- **AIS Data**: Ships transiting the Kattegat Strait between January 1st and March 10th, 2022: https://www.kaggle.com/datasets/eminserkanerdonmez/ais-dataset?select=ais_data.csv
 - Maritime domain knowledge references
 - Kattegat Strait maritime traffic analysis
