@@ -36,6 +36,7 @@ Maritime-Navigational-Status-Classification/
 │       ├── confusion_matrix_*.csv (3 files)
 │       └── classification_report_*.txt (3 files)
 ├── report/                       # Final report
+│   ├── Predicting_Vessel_Navigational_Status_Using_AIS_Motion_and_Ship_Specifications__A_Case_Study_in_the_Kattegat_Strait.pdf
 │   └── Rendered Notebooks/       # Rendered notebook outputs
 │       ├── 01_eda_preprocessing.pdf
 │       └── 02_modeling_evaluation.pdf
